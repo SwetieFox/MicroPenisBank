@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="МПБ — цифровой банк для тех, кто выбирает успешный успех.">
+  <title>МПБ — успешный успех</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="side-panel" id="sidePanel" aria-label="Быстрые действия">
+      <button class="side-close" id="sideClose" type="button" aria-label="Закрыть меню">×</button>
+      <div class="side-brand">МПБ <span>банк</span></div>
+      <nav class="side-nav">
+        <a href="#products">Продукты</a>
+        <a href="#calculator">Калькулятор</a>
+        <a href="#benefits">Почему МПБ</a>
+        <a href="#contact">Связаться</a>
+      </nav>
+      <div class="side-note">
+        <span class="eyebrow">Личный подход</span>
+        <strong>Решения, которые работают на ваш успешный успех.</strong>
+      </div>
+    </aside>
+
+    <div class="page-content">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="МПБ, на главную">
+          <span class="brand-mark">МПБ</span>
+          <span class="brand-name">Микро<br>пенис банк</span>
+        </a>
+        <nav class="top-nav" aria-label="Основная навигация">
+          <a href="#products">Продукты</a>
+          <a href="#calculator">Калькулятор</a>
+          <a href="#benefits">О банке</a>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-button" id="menuToggle" type="button" aria-label="Открыть боковое меню" aria-expanded="false">☰</button>
+          <a class="button button-small button-outline" href="#contact">Заявка</a>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero section-pad">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Ваш финансовый партнер</p>
+            <h1>Успешный успех начинается с <em>МПБ</em></h1>
+            <p class="hero-text">Берите от жизни больше: понятные кредиты, быстрые решения и продукты, которые помогают двигаться к своим целям.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#calculator">Рассчитать кредит <span>→</span></a>
+              <button class="text-button" id="openWizard" type="button">Настроить мой банк <span>↗</span></button>
+            </div>
+            <div class="trust-row"><span>●</span> Лицензия № 0001 · Демо-концепция</div>
+          </div>
+          <div class="hero-art reveal delay-one" aria-label="Декоративная композиция МПБ">
+            <div class="art-orbit orbit-one"></div>
+            <div class="art-orbit orbit-two"></div>
+            <div class="hero-card">
+              <span class="card-label">Ваш потенциал</span>
+              <strong>∞</strong>
+              <span class="card-caption">без лишних ограничений</span>
+            </div>
+            <div class="hero-sticker">МПБ<br><small>успех внутри</small></div>
+          </div>
+        </section>
+
+        <section class="ticker" aria-label="Преимущества банка">
+          <div>Решение за 5 минут <span>✦</span></div><div>Ставки без мелкого шрифта <span>✦</span></div><div>Банк для больших планов <span>✦</span></div><div>Решение за 5 минут <span>✦</span></div>
+        </section>
+
+        <section class="section-pad products-section" id="products">
+          <div class="section-heading"><div><p class="eyebrow">Для ваших задач</p><h2>Выберите свой<br><em>успешный сценарий</em></h2></div><p class="section-intro">Пятнадцать способов сделать следующий шаг. Выберите любой — мы уже знаем, как помочь.</p></div>
+          <div class="products-grid" id="productsGrid"></div>
+        </section>
+
+        <section class="calculator-section section-pad" id="calculator">
+          <div class="calculator-copy"><p class="eyebrow">Кредитный навигатор</p><h2>Планируйте<br><em>без сюрпризов</em></h2><p>Настройте параметры и узнайте ориентировочный ежемесячный платеж. Финальное решение зависит от индивидуальных условий.</p><a class="text-button" href="#contact">Получить предложение <span>↗</span></a></div>
+          <form class="calculator" id="creditCalculator">
+            <div class="calculator-top"><span>Расчет кредита</span><span class="calculator-rate">от 9,9% годовых</span></div>
+            <label class="range-label" for="amount"><span>Сумма</span><strong id="amountValue">500 000 ₽</strong></label>
+            <input id="amount" type="range" min="50000" max="3000000" step="50000" value="500000">
+            <label class="range-label" for="term"><span>Срок</span><strong id="termValue">24 месяца</strong></label>
+            <input id="term" type="range" min="3" max="84" step="3" value="24">
+            <div class="payment-result"><span>Ориентировочный платеж</span><strong id="paymentValue">23 050 ₽ <small>/ месяц</small></strong></div>
+            <button class="button button-dark" type="button" id="applyCredit">Получить одобрение <span>→</span></button>
+          </form>
+        </section>
+
+        <section class="benefits-section section-pad" id="benefits">
+          <div class="section-heading"><div><p class="eyebrow">МПБ в цифрах</p><h2>Больше, чем<br><em>просто банк</em></h2></div><p class="section-intro">Мы говорим на человеческом языке и строим сервис вокруг реальных целей, а не вокруг сложных терминов.</p></div>
+          <div class="benefits-grid"><article><strong>5 мин</strong><span>среднее время<br>первого решения</span></article><article><strong>24/7</strong><span>поддержка<br>в приложении</span></article><article><strong>0 ₽</strong><span>комиссия за<br>досрочное погашение</span></article></div>
+        </section>
+
+        <section class="contact-section section-pad" id="contact">
+          <div><p class="eyebrow">Остались вопросы?</p><h2>Давайте обсудим<br><em>ваш успех</em></h2></div>
+          <form class="contact-form" id="contactForm"><label>Ваше имя<input type="text" name="name" placeholder="Как к вам обращаться?" required></label><label>Телефон или email<input type="text" name="contact" placeholder="Для связи с вами" required></label><button class="button button-primary" type="submit">Отправить заявку <span>→</span></button><p class="form-message" id="formMessage" role="status"></p></form>
+        </section>
+      </main>
+
+      <footer class="site-footer"><div class="footer-brand"><span class="brand-mark">МПБ</span><span>Микро пенис банк</span></div><p>Успешный успех — это когда все получилось.</p><span>© 2026 МПБ · Демо-концепция</span></footer>
+    </div>
+  </div>
+
+  <div class="chat-widget" id="chatWidget" aria-live="polite"><button class="chat-button" id="chatToggle" type="button" aria-label="Открыть онлайн-консультанта">✦</button><div class="chat-panel"><strong>МПБ на связи</strong><p>Здравствуйте! Подсказать выгодный сценарий?</p><div class="chat-actions"><button type="button" data-chat="credit">Кредит</button><button type="button" data-chat="other">Другое</button></div></div></div>
+
+  <div class="wizard-backdrop" id="wizard" role="dialog" aria-modal="true" aria-labelledby="wizardTitle">
+    <div class="wizard-modal"><button class="wizard-close" id="wizardClose" type="button" aria-label="Закрыть мастер">×</button><div class="wizard-progress"><span id="wizardProgressBar"></span></div><div class="wizard-meta"><span id="wizardStep">01 / 15</span><span>Настройка МПБ</span></div><div class="wizard-content"><p class="eyebrow" id="wizardCategory">Тематика</p><h2 id="wizardTitle">Настроим ваш банк</h2><p id="wizardQuestion"></p><div class="wizard-options" id="wizardOptions"></div></div><div class="wizard-footer"><button class="text-button" id="wizardBack" type="button">← Назад</button><span>Ваш выбор меняет стиль сайта</span></div></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
